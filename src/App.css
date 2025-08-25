@@ -10,9 +10,10 @@
 }
 
 .weather-card{
+  color:#ECEFF1;
   margin-top: 150px;
   max-width: 500px;
-  background: linear-gradient(to bottom, #87CEEB, #B0BEC5);
+  background: linear-gradient(to bottom, #4E4B78, #23253b);
   border-radius: 8px;
 }
 
@@ -26,6 +27,6 @@
 }
 
 h2{
-  color:#4E4B78;
+  color:#8e8da5;
   font-weight: bolder;
 }
