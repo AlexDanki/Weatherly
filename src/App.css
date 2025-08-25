@@ -22,11 +22,11 @@
 }
 .weather-card .content{
   color:#fff;
-  text-align: center;
   padding: 8px;
 }
 
 h2{
-  color:#8e8da5;
+  text-align:center;
+  color:#FFC2A6;
   font-weight: bolder;
 }
