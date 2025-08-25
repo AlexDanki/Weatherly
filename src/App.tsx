@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import weatherImg from './assets/WeatherImg.png'
 
 interface LocationDataProp{
   cityWOSC: string
@@ -51,15 +52,17 @@ async function handleGetLocation(){
 }
 
   return (
-    <div>
+    <div className='container'>
       <div className="weather-card">
-      <h2>{weather?.name}</h2>
-      <p>{weather?.weather.description}</p>
-      <p>🌡️ {weather?.main.temp}°C</p>
-      <p>💧 Umidade: {weather?.main.humidity}%</p>
-      <p>🌬️ Vento: {weather?.wind.speed} km/h</p>
-      <button onClick={handleGetLocation}>Conferir</button>
-    </div>
+        <img className='image' src={weatherImg} alt="" />
+        <div className='content'>
+          <h2>{weather?.name}</h2>
+          <p>{weather?.weather.description}</p>
+          <p>🌡️ {weather?.main.temp}°C</p>
+          <p>💧 Umidade: {weather?.main.humidity}%</p>
+          <p>🌬️ Vento: {weather?.wind.speed} km/h</p>
+        </div>
+      </div>
     </div>
   )
 }
